@@ -25,3 +25,15 @@
   text-shadow: 3px 3px black;
   background-size: cover;
 }
+
+.launch {
+  display: none;
+}
+
+.reevaluate {
+  display: none;
+}
+
+.reconsider {
+  display: none;
+}
