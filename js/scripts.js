@@ -36,7 +36,7 @@ $(function(){
     var selection = ($("#tracks").val());
     console.log(selection);
 
-      if (selection === "Design") {
+      if (selection === "CSS/Design") {
         $(".Design").show();
         $(".Ruby,.cSharp,.Java,.PHP").hide();
       }
