@@ -26,14 +26,21 @@
   background-size: cover;
 }
 
-.launch {
+.launch, .reevaluate, .reconsider {
   display: none;
 }
 
-.reevaluate {
+
+.Design, .Ruby, .cSharp, .Java, .PHP {
   display: none;
+  margin-bottom: 100px;
 }
 
-.reconsider {
-  display: none;
+#Ruby {
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: auto;
+
+
 }

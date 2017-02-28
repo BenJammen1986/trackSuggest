@@ -57,7 +57,7 @@
         <div class="question">
           <div class="radio">
             <label>
-              <input type="radio" name="team" value="3"> Very comfortable. I enjoy team projects AND/OR work well in this kind of situation.
+              <input type="radio" name="team" value="3" checked> Very comfortable. I enjoy team projects AND/OR work well in this kind of situation.
             </label>
           </div>
           <div class="radio">
@@ -78,7 +78,7 @@
               Developers MUST have or be willing to grow their problem solving abilities. Will you be able to persevere through difficult challenges?<br> Are you ok with "not knowing"- but have the initiative to find out for yourself?
             </p>
             <label>
-              <input type="radio" name="probSolve" value="3">
+              <input type="radio" name="probSolve" value="3" checked>
               Absolutely! I am a problem solving master <strong>and/or</strong> I am eager to grow my problem solving chops.
             </label>
           </div>
@@ -104,7 +104,7 @@
               <strong>If you are <em>brand new</em> to programming-</strong> you may need to study quite a bit, even outside of our rigorous school hours. Are you willing to sacrifice other non-essentials (tv, games, events/parties) to focus on this program?
             </p>
             <label>
-              <input type="radio" name="commit" value="3">
+              <input type="radio" name="commit" value="3" checked>
               Yes. I've got all my ducks in a row: I'm ready to go!
             </label>
           </div>
@@ -131,7 +131,7 @@
               Do you have strong goals and a big why?
             </p>
             <label>
-              <input type="radio" name="why" value="3">
+              <input type="radio" name="why" value="3" checked>
               Yes: I know why I'm doing this and what I want to accomplish
             </label>
           </div>
@@ -184,26 +184,63 @@
       </form>
     </div>
     <div class="container">
-      <div class="launch">
-        <h2>Congratulations!</h2>
-        <h4>It looks like you may be a good fit for one of our programming tracks!</h4><br>
-        <p>Just as it is important to make sure that you have the right personality to work in the programming world in general- it is also a good idea to gauge what kind of work environment you will thrive in:
-        <ul>
-          <li>Would you like to work with a large company with more structure?</li>
-          <li>Or rather: smaller teams, risk/reward of startups?</li>
-          <li>Are you more geared towards design (front end) or function/logic (back end programming)?</li>
-        </ul></p>
-        <p>If you're ready to commit, we're here to help!</p><br>
-        <p>Take a look at the different tracks that are available through Epicodus below, and then use the contact form to get in touch with us! <strong>We're rooting for you!</strong></p>
-      </div>
-      <div class="reevaluate">
-        <p>Here is something else.</p>
-      </div>
-      <div class="reconsider">
-        <h2>Take some time to honestly consider:</h2>
-        <h4><i>Is this really a career you will thrive in?</i></h4>
-        <p>We are absolutely here for <b>anyone</b> who is ready to step into this challenging and rewarding career!</p>
-        <p></p>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="launch">
+            <h2>Congratulations!</h2>
+            <h4>It looks like you may be a good fit for one of our programming tracks!</h4><br>
+            <p>Just as it is important to make sure that you have the right personality to work in the programming world in general- it is also a good idea to gauge what kind of work environment you will thrive in:
+            <ul>
+              <li>Would you like to work with a large company with more structure?</li>
+              <li>Or rather: smaller teams, risk/reward of startups?</li>
+              <li>Are you more geared towards design (front end) or function/logic (back end programming)?</li>
+            </ul></p>
+            <p>If you're ready to commit, we're here to help!</p><br>
+            <p>Take a look at the different tracks that are available through Epicodus below, and then use the contact form to get in touch with us! <strong>We're rooting for you!</strong></p><br>
+            <h1>Programming Tracks</h1>
+            <form id="allTracks">
+              <div class="formDiv">
+                <h2>Check out our programming tracks!</h2>
+                <select class="form-control" id="tracks">
+                <option disabled selected value> -- select an option -- </option>
+                <option>Design</option>
+                <option>Ruby/Rails</option>
+                <option>C#/.Net</option>
+                <option>Java/Android</option>
+                <option>PHP/Drupal</option>
+                </select>
+              </div>
+            </form>
+            <div class="Design"><br><br>
+              <p><br><br>Beer is sold in bottles and cans; it may also be available on draught, particularly in pubs and bars. The brewing industry is a global business, consisting of several dominant multinational companies and many thousands of smaller producers ranging from brewpubs to regional breweries.</p>
+            </div>
+            <div class="Ruby"><br><br>
+              <img src="img/Ruby1.png" alt="An image representing Ruby programming language" id="Ruby">
+              <p>Borscht (English pronunciation: Listeni/ˈbɔːrʃᵗ/) is a sour soup popular in several Eastern European cuisines, including Ukrainian, Russian, Polish, Belarusian, Lithuanian, Romanian, and Ashkenazi Jewish cuisines. <br><br></p>
+            </div>
+            <div class="cSharp"><br><br>
+              <p>Kombucha is a variety of fermented, lightly effervescent sweetened black or green tea drinks that are commonly intended as functional beverages for their supposed health benefits. Kombucha is produced by fermenting tea using a "symbiotic 'colony' of bacteria and yeast" (SCOBY).</p>
+            </div>
+            <div class="Java"><br><br>
+              <p>Ye-ha!</p>
+
+              <p>Kimchi (Hangul: 김치, Korean: [kimtɕʰi]; English /ˈkɪmtʃi/), also spelled kimchee or gimchi, is a traditional fermented Korean side dish made of vegetables with a variety of seasonings.[1][2]
+              </p>
+            </div>
+            <div class="PHP"><br><br>
+              <p>Kefir or kephir (/kəˈfir/ kə-feer),[1][2] alternatively milk kefir, or búlgaros, is a fermented milk drink that originated in the north Caucasus Mountains made with kefir "grains", a yeast/bacterial fermentation starter.[3] It is prepared by inoculating cow, goat, or Sheep milk with kefir grains.[4] Traditional kefir was made in goatskin bags that were hung near a doorway; the bag would be knocked by anyone passing through to help keep the milk and kefir grains well mixed.</p>
+            </div>
+            <div class="reconsider">
+              <h2>Take some time to honestly consider:</h2>
+              <h4><i>Is this really a career you will thrive in?</i></h4>
+              <p>We are absolutely here for <b>anyone</b> who is ready to step into this challenging and rewarding career!</p>
+              <p></p>
+            </div>
+            <div class="reevaluate">
+              <p>Here is something else.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

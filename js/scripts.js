@@ -1,3 +1,5 @@
+
+//For the Questionnaire Form:
 $(function(){
   $("#stageCommit").submit(function(){
     event.preventDefault();
@@ -27,6 +29,38 @@ $(function(){
     $(".reevaluate").hide()
     $(".launch").hide()
     }
+  });
+
+//For the dropdown form for programming tracks:
+  $("#allTracks").on('change', function(){
+    var selection = ($("#tracks").val());
+    console.log(selection);
+
+      if (selection === "Design") {
+        $(".Design").show();
+        $(".Ruby,.cSharp,.Java,.PHP").hide();
+      }
+
+      if (selection === "Ruby/Rails") {
+        $(".Ruby").show();
+      $(".cSharp,.Java,.PHP,.Design").hide();
+      }
+
+      if (selection === "C#/.Net") {
+        $(".cSharp").show();
+      $(".Ruby,.Java,.PHP,.Design").hide();
+      }
+
+      if (selection === "Java/Android") {
+        $(".Java").show();
+      $(".Ruby,.cSharp,.PHP,.Design").hide();
+      }
+
+      if (selection === "PHP/Drupal") {
+        $(".PHP").show();
+        $(".Ruby,.cSharp,.Java,.Design").hide();
+
+      }
 
   });
 
