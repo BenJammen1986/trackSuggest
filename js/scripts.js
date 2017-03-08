@@ -1,6 +1,6 @@
 
 //For the Questionnaire Form:
-$(function(){
+$(function() {
   $("#stageCommit").submit(function(){
     event.preventDefault();
 
@@ -10,24 +10,16 @@ $(function(){
     score += parseInt($("input:radio[name=commit]:checked").val());
     score += parseInt($("input:radio[name=why]:checked").val());
     score += parseInt($("input:radio[name=personality]:checked").val());
-    console.log(score);
+      debugger;
+    if (score >= 12) {
 
-    if (score>=12) {
-    $(".launch").show()
-    $(".reevalute").hide()
-    $(".reconsider").hide()
-    }
-
-    else if ((score<=11) && (score>=9)) {
-    $(".reevalute").show()
-    $(".launch").hide()
-    $(".reconsider").hide()
-    }
-
-    else if (score<9) {
-    $(".reconsider").show()
-    $(".reevaluate").hide()
-    $(".launch").hide()
+      $("#launch").show();
+    } else if (score >= 9 && score < 12) {
+      console.log(score)
+      $("#reevaluate").show();
+    } else {
+      $("#reconsider").show();
+      console.log(score)
     }
   });
 
@@ -36,32 +28,21 @@ $(function(){
     var selection = ($("#tracks").val());
     console.log(selection);
 
-      if (selection === "CSS/Design") {
+      if (selection === "Design") {
         $(".Design").show();
         $(".Ruby,.cSharp,.Java,.PHP").hide();
-      }
-
-      if (selection === "Ruby/Rails") {
+      } if (selection === "Ruby/Rails") {
         $(".Ruby").show();
-      $(".cSharp,.Java,.PHP,.Design").hide();
-      }
-
-      if (selection === "C#/.Net") {
+        $(".cSharp,.Java,.PHP,.Design").hide();
+      } if (selection === "C#/.Net") {
         $(".cSharp").show();
-      $(".Ruby,.Java,.PHP,.Design").hide();
-      }
-
-      if (selection === "Java/Android") {
+        $(".Ruby,.Java,.PHP,.Design").hide();
+      } if (selection === "Java/Android") {
         $(".Java").show();
-      $(".Ruby,.cSharp,.PHP,.Design").hide();
-      }
-
-      if (selection === "PHP/Drupal") {
+        $(".Ruby,.cSharp,.PHP,.Design").hide();
+      } if (selection === "PHP/Drupal") {
         $(".PHP").show();
         $(".Ruby,.cSharp,.Java,.Design").hide();
-
       }
-
   });
-
 });

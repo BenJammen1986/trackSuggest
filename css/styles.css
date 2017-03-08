@@ -26,7 +26,7 @@
   background-size: cover;
 }
 
-.launch, .reevaluate, .reconsider {
+#launch, #reevaluate, #reconsider {
   display: none;
 }
 

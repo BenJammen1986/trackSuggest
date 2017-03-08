@@ -16,7 +16,8 @@ _This page is designed to help potential students decide:
 _You are welcome to clone this project! You'll need to:_
 * _1. Follow the instructions on Github to clone/download_
   **or**
-* _1. For Windows- download Gitbash @ https://git-scm.com/downloads._
+* _1. For Windows- download Gitbash @   
+  https://git-scm.com/downloads._
       For Mac- search your computer for "terminal" (the computer's built in command prompt).
 * _2. Open Gitbash/Terminal
 * _3. Navigate to the desktop (or the folder you want the project to appear in) using this text:
